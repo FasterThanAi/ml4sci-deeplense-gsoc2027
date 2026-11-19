@@ -1,0 +1,69 @@
+{
+  "final_model": "hi-res",
+  "selection_on_valid": {
+    "valid macro AUC": {
+      "baseline": 0.9967,
+      "hi-res": 0.9981,
+      "ensemble (mean)": 0.9979
+    },
+    "valid subhalo-vs-rest AUC": {
+      "baseline": 0.9946,
+      "hi-res": 0.9973,
+      "ensemble (mean)": 0.9968
+    },
+    "valid accuracy": {
+      "baseline": 0.9677,
+      "hi-res": 0.978,
+      "ensemble (mean)": 0.9757
+    }
+  },
+  "test": {
+    "baseline": {
+      "no substructure vs rest": 0.9962,
+      "subhalo (CDM) vs rest": 0.9928,
+      "vortex vs rest": 0.9985,
+      "micro-average": 0.9969,
+      "macro-average (OvR)": 0.9958,
+      "accuracy": 0.968
+    },
+    "hi-res": {
+      "no substructure vs rest": 0.9964,
+      "subhalo (CDM) vs rest": 0.9945,
+      "vortex vs rest": 0.9991,
+      "micro-average": 0.9977,
+      "macro-average (OvR)": 0.9967,
+      "accuracy": 0.9732
+    },
+    "ensemble (mean)": {
+      "no substructure vs rest": 0.9966,
+      "subhalo (CDM) vs rest": 0.9943,
+      "vortex vs rest": 0.999,
+      "micro-average": 0.9976,
+      "macro-average (OvR)": 0.9966,
+      "accuracy": 0.9731
+    }
+  },
+  "test_errors": {
+    "baseline": {
+      "subhalo predicted as no-sub": 124,
+      "all wrong predictions": 240
+    },
+    "hi-res": {
+      "subhalo predicted as no-sub": 103,
+      "all wrong predictions": 201
+    },
+    "ensemble (mean)": {
+      "subhalo predicted as no-sub": 109,
+      "all wrong predictions": 202
+    }
+  },
+  "hires_cfg": {
+    "epochs": 30,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 2,
+    "seed": 42
+  },
+  "hires_best_epoch": 30
+}

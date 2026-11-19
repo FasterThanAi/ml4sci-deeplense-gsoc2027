@@ -1,0 +1,24 @@
+{
+  "test_macro_auc": {
+    "baseline": 0.9958290666666666,
+    "hires": 0.9966848
+  },
+  "errors": {
+    "baseline": 240,
+    "hires": 201
+  },
+  "mcnemar": {
+    "only_baseline_right": 41,
+    "only_hires_right": 80,
+    "exact_p_value": 0.0004985619576974186
+  },
+  "bootstrap_auc_diff": {
+    "mean": 0.0008600148616534403,
+    "ci95": [
+      0.00033554700038246067,
+      0.0013401576379943267
+    ],
+    "share_of_resamples_hires_better": 0.9995,
+    "n_resamples": 2000
+  }
+}

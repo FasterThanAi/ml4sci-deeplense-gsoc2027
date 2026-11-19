@@ -1,0 +1,22 @@
+{
+  "model": "ResNet-18 (ImageNet init, 1-channel conv1)",
+  "cfg": {
+    "epochs": 30,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 2,
+    "seed": 42
+  },
+  "best_epoch": 29,
+  "valid_macro_auc": 0.9951045000000001,
+  "tta": true,
+  "test": {
+    "no substructure vs rest": 0.9962,
+    "subhalo (CDM) vs rest": 0.9928,
+    "vortex vs rest": 0.9985,
+    "micro-average": 0.9969,
+    "macro-average (one-vs-rest)": 0.9958,
+    "accuracy": 0.968
+  }
+}

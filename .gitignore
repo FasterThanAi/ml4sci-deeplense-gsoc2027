@@ -1,0 +1,8 @@
+data/
+weights/*.pt
+weights/*.pth
+.ipynb_checkpoints/
+__pycache__/
+runs/smoke/
+!weights/resnet18_hires_best.pt
+runs/*.log
