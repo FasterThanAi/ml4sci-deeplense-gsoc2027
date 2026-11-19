@@ -6,3 +6,5 @@ __pycache__/
 runs/smoke/
 !weights/resnet18_hires_best.pt
 runs/*.log
+!weights/edsr_superres_a_best.pt
+!weights/edsr_superres_b_finetuned.pt
